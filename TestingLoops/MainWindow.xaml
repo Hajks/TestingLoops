@@ -7,6 +7,26 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="button1" Content="Show statement" HorizontalAlignment="Center" VerticalAlignment="Center" Width="96" Click="button1_Click"/>
+        <Button x:Name="button3" Content="Checking new condition" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Width="142" Click="button3_Click"/>
+        <Button x:Name="button2" Content="If/Else" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Click="button2_Click"/>
+        <Button x:Name="button4" Content="Loop" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Width="75" Click="button4_Click"/>
+        <TextBlock x:Name="myLabel" HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" Grid.ColumnSpan="2" IsHitTestVisible="True"/>
+
     </Grid>
 </Window>
